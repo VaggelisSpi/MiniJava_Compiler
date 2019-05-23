@@ -12,7 +12,7 @@ sudo apt-get install clang-4.0
 
 ## Compile and Run
 
-In order to compile the project you simply need to run make in the scr file
+In order to compile the project you simply need to run make
 ```
 make
 ```
@@ -32,19 +32,19 @@ and then simply run it.
 ```
 
 # Example
-Let's say we want to compile and run the following file: `input/Factorial.java`
+Let's say we want to compile and run the following file: `input/Addition.java`
 
 Firstly, we need to compile our project:
 ```
 make
 ```
-Secondly, we want to compile input/Factorial.java using our MiniJava compiler:
+Secondly, we want to compile input/Addition.java using our MiniJava compiler:
 ```
-java Main input/Factorial.java
+java Main input/Addition.java
 ```
 This will produce the file Factorial.ll in the /output directory. Then we want to compile this intermediate LLVM code using Clang:
 ```
-clang-4.0 output/Factorial.ll -o a.out
+clang-4.0 output/Addition.ll -o a.out
 ```
 Finally, all that is left to do is to execute the executable:
 ```
