@@ -14,7 +14,6 @@ sudo apt-get install clang-4.0
 
 In order to compile the project you simply need to run make in the scr file
 ```
-cd src
 make
 ```
 
@@ -25,11 +24,11 @@ java Main <inputFile>
 
 In order to run the compiled LLVM code you'll need to create an executable file
 ```
-clang-4.0 <fileName> -o out**
+clang-4.0 <fileName> -o a.out
 ```
 and then simply run it.
 ```
-./out
+./a.out
 ```
 
 # Example
@@ -45,9 +44,9 @@ java Main input/Factorial.java
 ```
 This will produce the file Factorial.ll in the /output directory. Then we want to compile this intermediate LLVM code using Clang:
 ```
-clang-4.0 output/Factorial.ll -o out
+clang-4.0 output/Factorial.ll -o a.out
 ```
 Finally, all that is left to do is to execute the executable:
 ```
-./out
+./a.out
 ```
