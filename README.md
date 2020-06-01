@@ -42,7 +42,7 @@ Secondly, we want to compile input/Addition.java using our MiniJava compiler:
 ```
 java Main input/Addition.java
 ```
-This will produce the file Factorial.ll in the /output directory. Then we want to compile this intermediate LLVM code using Clang:
+This will produce the file ```Factorial.ll``` in the ```/output``` directory. Then we want to compile this intermediate LLVM code using Clang:
 ```
 clang-4.0 output/Addition.ll -o a.out
 ```
