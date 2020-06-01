@@ -34,7 +34,7 @@ and then simply run it.
 # Example
 Let's say we want to compile and run the following file: `input/Addition.java`
 
-Firstly, we need to compile our project:
+Firs, we need to compile our project:
 ```
 make
 ```
